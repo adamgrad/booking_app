@@ -1,24 +1,30 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Ruby on Rails booking application
 
-Things you may want to cover:
+This is application for Mini-BookingSync API.
 
-* Ruby version
+## Getting started
 
-* System dependencies
+To get started with the app, clone the repository and then install gems:
 
-* Configuration
+```
+$ bundle install --without production
+```
 
-* Database creation
+Next step is to migrate the database:
 
-* Database initialization
+```
+$ rails db:migrate
+```
 
-* How to run the test suite
+To verify if everything is working correctly run the test suite:
+```
+$ rails test
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Last step is to run the app in a local server:
 
-* Deployment instructions
-
-* ...
+```
+$ rails server
+```
