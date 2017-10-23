@@ -140,3 +140,14 @@ input {
     color: $state-danger-text;
   }
 }
+
+/* flash */
+
+.alert-danger {
+  margin-left: auto;
+  margin-right: auto;
+
+  height: 52px;
+  width: 555px;
+  text-align: center;
+}
