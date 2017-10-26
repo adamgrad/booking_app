@@ -1,16 +1,8 @@
 <% provide(:title, 'Sign up') %>
+<% provide(:button_text, "Create account") %>
 <h1>Sign up</h1>
-
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-    <%= simple_form_for(@user, url: signup_path) do |f|  %>
-        <%= f.error_notification %>
-        <%= f.input :name, error: "Name is required. (Max 50 characters)" %>
-        <%= f.input :email, error: "Incorrect format. (correct: example@mail.com)" %>
-        <%= f.input :password, error: "Can't be blank. Must be at least 6 characters." %>
-        <%= f.input :password_confirmation, required: true, error: "Confirmation doesn't match password." %>
-
-        <%= f.submit class: "btn btn-primary" %>
-    <% end %>
+    <%= render "layouts/form" %>
   </div>
 </div>

@@ -146,8 +146,27 @@ input {
 .alert-danger {
   margin-left: auto;
   margin-right: auto;
-
   height: 52px;
   width: 555px;
   text-align: center;
+}
+
+.alert-success {
+  margin-left: auto;
+  margin-right: auto;
+  height: 52px;
+  width: 555px;
+  text-align: center;
+}
+
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
 }

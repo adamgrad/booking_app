@@ -1,0 +1,8 @@
+<%= simple_form_for(@user) do |f|  %>
+    <%= f.error_notification %>
+    <%= f.input :name, error: "Name is required. (Max 50 characters)" %>
+    <%= f.input :email, error: "Incorrect format. (correct: example@mail.com)" %>
+    <%= f.input :password, error: "Can't be blank. Must be at least 6 characters." %>
+    <%= f.input :password_confirmation, required: true, error: "Confirmation doesn't match password." %>
+    <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+<% end %>
